@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for tailwindcss-on-fly on 2023-11-24T13:36:05+05:30
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "tailwindcss-on-fly"
+primary_region = "bos"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
